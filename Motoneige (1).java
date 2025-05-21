@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class Motoneige extends Vehicule implements Assurable{
     private int cc;
 
+    // motoneige herite de vehicule 
     public Motoneige(double valeur, int anneeModele, Proprietaire pr, String numeroPlaque, int cc){
         super(valeur, anneeModele, pr, numeroPlaque);
         this.cc = cc;
@@ -26,6 +27,7 @@ public class Motoneige extends Vehicule implements Assurable{
         return true;
     }
 
+    
     @Override
     public double coutAssurance() {
         LocalDate now = LocalDate.now();
